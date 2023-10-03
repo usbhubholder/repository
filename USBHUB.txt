@@ -1,5 +1,4 @@
 -- USB HUB, PLEASE DONT CHANGE THE CODE
-local player = game.Players.LocalPlayer
  
 game.StarterGui:SetCore("SendNotification", {
     Title = "USB Hub Loaded",
@@ -10,12 +9,12 @@ game.StarterGui:SetCore("SendNotification", {
 
 CreateUI = nil
 
-if player.PlayerGui:FindFirstChild("USBHUBUI") then
-       CreateUI = player.PlayerGui:FindFirstChild("USBHUBUI")
+if script.Parent.PlayerGui:FindFirstChild("USBHUBUI") then
+       CreateUI = script.Parent.PlayerGui:FindFirstChild("USBHUBUI")
     else
        CreateUI = Instance.new("ScreenGui")
        CreateUI.Name = "USBHUBUI"
-       CreateUI.Parent = player.PlayerGui
+       CreateUI.Parent = script.Parent.PlayerGui
        CreateUI.ResetOnSpawn = true
    end
 end
