@@ -19,3 +19,5 @@ if player.PlayerGui:FindFirstChild("USBHUBUI") then
        CreateUI.ResetOnSpawn = true
    end
 end
+
+local Frame = Instance.new("Frame", CreateUI)
