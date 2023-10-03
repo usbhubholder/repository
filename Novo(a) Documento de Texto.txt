@@ -1,0 +1,9 @@
+-- USB HUB, PLEASE DONT CHANGE THE CODE
+--local player = game.Players.LocalPlayer
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "USB Hub Loaded",
+    Text = "To join the hub, you need to type the key.",
+    Icon = "",
+    Duration = 5
+})
