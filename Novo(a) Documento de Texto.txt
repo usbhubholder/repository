@@ -8,10 +8,12 @@ game.StarterGui:SetCore("SendNotification", {
     Duration = 5
 })
 
-if player.PlayerGui:FindFirstChild("USBHUBUI") then
+CreateUI = nil
 
+if player.PlayerGui:FindFirstChild("USBHUBUI") then
+       CreateUI = player.PlayerGui:FindFirstChild("USBHUBUI")
     else
-       local CreateUI = Instance.new("ScreenGui")
+       CreateUI = Instance.new("ScreenGui")
        CreateUI.Name = "USBHUBUI"
        CreateUI.Parent = player.PlayerGui
        CreateUI.ResetOnSpawn = true
